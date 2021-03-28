@@ -1,0 +1,56 @@
+.container {
+  max-width: 1120px;
+  min-height: 100vh;
+  margin: 0.5rem auto;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+  img {
+    margin-bottom: 4rem;
+  }
+  a {
+    display: block;
+    & + a {
+      margin-top: 2rem;
+      padding-top: 2rem;
+    }
+    strong {
+      font-weight: 700;
+      font-size: 1.75rem;
+    }
+    p {
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+    > div {
+      display: flex;
+      align-items: center;
+      div {
+        time, span {
+          font-weight: 400;
+          margin-left: 0.5rem;
+        }
+        & + div {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+  .loadMore {
+    margin-top: 64px;
+    color: var(--highlight);
+    font-weight: 600;
+    font-size: 18px;
+    border: 0;
+    background: transparent;
+    transition: filter 0.2s;
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}
